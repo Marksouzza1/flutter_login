@@ -4,8 +4,6 @@ import 'package:flutter_login/pages/login_page.dart';
 void main() {
   runApp(MyApp());
 }
-
-
 class MyApp extends StatelessWidget{
 
 @override

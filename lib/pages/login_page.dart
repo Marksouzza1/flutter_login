@@ -54,8 +54,8 @@ class LoginPage extends StatelessWidget {
                   alignment: Alignment.centerRight,
                   child: TextButton(
                     style: TextButton.styleFrom(),
-                    onPressed: (){} ,
                     child: Text('esqueci minha senha'),
+                    onPressed: (){} ,
                   ),
                 ),
           ],
