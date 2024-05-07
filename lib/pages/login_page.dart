@@ -58,6 +58,34 @@ class LoginPage extends StatelessWidget {
                     onPressed: (){} ,
                   ),
                 ),
+                SizedBox(
+                  height: 40,
+                ),
+                Container(
+                  height: 60,
+                  alignment: Alignment.centerLeft,
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      begin: Alignment.topLeft,
+                      end: Alignment.bottomRight,
+                      stops: [0.3,1],
+                      colors: [
+                        Color(0xFFF58524),
+                          Color(0xFFF92b7f),
+                      ]
+                    ),
+                    borderRadius: BorderRadius.all(
+                      Radius.circular(5),
+                    )
+                  ),
+                  child: SizedBox.expand(
+                    child: TextButton(
+                      style: TextButton.styleFrom(),
+                      child: Text("Login"),
+                      onPressed: () {},
+                    ),
+                  ),
+                )
           ],
         ),
       ),
