@@ -7,7 +7,7 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        padding: EdgeInsets.only(
+        padding: const EdgeInsets.only(
           top: 60,
           left: 40,
           right: 40,
@@ -15,17 +15,17 @@ class LoginPage extends StatelessWidget {
         color: Colors.white,
         child: ListView(
           children: <Widget>[
-            SizedBox(
+             SizedBox(
               width: 128,
               height: 128,
-              child: Image.asset('assetes/image.png'),
+              child: Image.asset("assets/images/house.jpg"),
             ),
-            SizedBox(
+            const  SizedBox(
               height: 20,
             ),
-            TextFormField(
+             TextFormField(
               keyboardType: TextInputType.emailAddress,
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 labelText: 'E-mail',
                 labelStyle: TextStyle(
                   color: Colors.black38,
@@ -34,13 +34,13 @@ class LoginPage extends StatelessWidget {
                 )
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height:20,
             ),
               TextFormField(
               keyboardType: TextInputType.text,
               obscureText: true,
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 labelText: 'Senha',
                 labelStyle: TextStyle(
                   color: Colors.black38,
@@ -54,23 +54,27 @@ class LoginPage extends StatelessWidget {
                   alignment: Alignment.centerRight,
                   child: TextButton(
                     style: TextButton.styleFrom(),
-                    child: Text('esqueci minha senha'),
+                    child: const Text('esqueci minha senha',
+                    style: 
+                    TextStyle(
+                      color: Colors.black,
+                    ),),
                     onPressed: (){} ,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 40,
                 ),
                 Container(
                   height: 60,
                   alignment: Alignment.centerLeft,
-                  decoration: BoxDecoration(
+                 decoration: const BoxDecoration(
                     gradient: LinearGradient(
                       begin: Alignment.topLeft,
                       end: Alignment.bottomRight,
                       stops: [0.3,1],
                       colors: [
-                        Color(0xFFF58524),
+                        Color.fromARGB(255, 230, 95, 149),
                           Color(0xFFF92b7f),
                       ]
                     ),
@@ -81,7 +85,10 @@ class LoginPage extends StatelessWidget {
                   child: SizedBox.expand(
                     child: TextButton(
                       style: TextButton.styleFrom(),
-                      child: Text("Login"),
+                      child: const Text("Login",
+                      style: TextStyle(
+                        color:Colors.white,),
+                      ),
                       onPressed: () {},
                     ),
                   ),

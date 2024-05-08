@@ -13,7 +13,7 @@ Widget build(BuildContext context) {
     theme: ThemeData(
       primarySwatch: Colors.deepOrange,
     ),
-    home: LoginPage(),
+    home: const LoginPage(),
   );
 }
 }
