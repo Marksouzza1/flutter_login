@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -16,13 +17,30 @@ class LoginPage extends StatelessWidget {
         child: ListView(
           children: <Widget>[
              SizedBox(
-              width: 128,
-              height: 128,
-              child: Image.asset("assets/images/house.jpg"),
+              width: 130,
+              height: 130,
+              child: Image.asset('assets/images/house3.jpg'),
             ),
             const  SizedBox(
               height: 20,
             ),
+            Container(
+              height: 100,
+              alignment: Alignment.center,
+              child: const Column
+              (
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text('Faxinei', 
+                  style: TextStyle(
+                    fontSize: 40, fontWeight: FontWeight.bold),
+                    ),
+                    SizedBox(height: 5,),
+                    Text('#Nei A faxina que você pediu')
+                ],
+              ),
+            ),
+           
              TextFormField(
               keyboardType: TextInputType.emailAddress,
               decoration: const InputDecoration(
