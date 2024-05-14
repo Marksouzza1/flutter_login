@@ -42,9 +42,12 @@ class LoginPage extends StatelessWidget {
             ),
            
              TextFormField(
+              textInputAction: TextInputAction.next,
+              autofocus: true,
               keyboardType: TextInputType.emailAddress,
               decoration: const InputDecoration(
                 labelText: 'E-mail',
+                border: OutlineInputBorder(),
                 labelStyle: TextStyle(
                   color: Colors.black38,
                   fontWeight: FontWeight.w400,
@@ -56,10 +59,13 @@ class LoginPage extends StatelessWidget {
               height:20,
             ),
               TextFormField(
+              textInputAction: TextInputAction.done, 
+              autofocus: true,  
               keyboardType: TextInputType.text,
               obscureText: true,
               decoration: const InputDecoration(
                 labelText: 'Senha',
+                border: OutlineInputBorder(),
                 labelStyle: TextStyle(
                   color: Colors.black38,
                   fontWeight: FontWeight.w400,
@@ -92,7 +98,7 @@ class LoginPage extends StatelessWidget {
                       end: Alignment.bottomRight,
                       stops: [0.3,1],
                       colors: [
-                        Color.fromARGB(255, 230, 95, 149),
+                        Color(0xFFE65F95),
                           Color(0xFFF92b7f),
                       ]
                     ),
@@ -109,6 +115,26 @@ class LoginPage extends StatelessWidget {
                       ),
                       onPressed: () {},
                     ),
+                  ),
+                ),
+                const SizedBox(
+                  height: 20,
+                ),
+                Container(
+                  height: 40,
+                  alignment: Alignment.center,
+                  child: (
+                    TextButton(
+                      style: TextButton.styleFrom(),
+                      child: (
+                      const  Text('cadastre-se',
+                      style: TextStyle(
+                        color: Color(0xFFE91E63),
+                        fontSize: 20
+                      ),)
+                      ),
+                      onPressed: () { },
+                    )
                   ),
                 )
           ],
