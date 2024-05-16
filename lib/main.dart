@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_login/pages/login_page.dart';
+import 'package:flutter_login/view/home_page.dart';
+import 'package:flutter_login/view/register_form.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,7 +15,12 @@ Widget build(BuildContext context) {
     theme: ThemeData(
       primarySwatch: Colors.deepOrange,
     ),
-    home: const LoginPage(),
+    initialRoute: '/',
+    routes: {
+      '/':(context) => const Home(),
+      '/login':(context) => const LoginPage(),
+      '/register':(context) => const RegisterForm()
+    },
   );
 }
 }

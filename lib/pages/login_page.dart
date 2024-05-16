@@ -16,14 +16,6 @@ class LoginPage extends StatelessWidget {
         color: Colors.white,
         child: ListView(
           children: <Widget>[
-             SizedBox(
-              width: 130,
-              height: 130,
-              child: Image.asset('assets/images/house3.jpg'),
-            ),
-            const  SizedBox(
-              height: 20,
-            ),
             Container(
               height: 100,
               alignment: Alignment.center,
@@ -43,7 +35,6 @@ class LoginPage extends StatelessWidget {
            
              TextFormField(
               textInputAction: TextInputAction.next,
-              autofocus: true,
               keyboardType: TextInputType.emailAddress,
               decoration: const InputDecoration(
                 labelText: 'E-mail',
@@ -60,7 +51,6 @@ class LoginPage extends StatelessWidget {
             ),
               TextFormField(
               textInputAction: TextInputAction.done, 
-              autofocus: true,  
               keyboardType: TextInputType.text,
               obscureText: true,
               decoration: const InputDecoration(
@@ -133,7 +123,9 @@ class LoginPage extends StatelessWidget {
                         fontSize: 20
                       ),)
                       ),
-                      onPressed: () { },
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/register');
+                       },
                     )
                   ),
                 )
