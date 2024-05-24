@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_login/pages/login_page.dart';
 import 'package:flutter_login/view/home_page.dart';
 import 'package:flutter_login/view/register_form.dart';
+import 'package:flutter_login/view/user_type_selection_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -19,7 +20,8 @@ Widget build(BuildContext context) {
     routes: {
       '/':(context) => const Home(),
       '/login':(context) => const LoginPage(),
-      '/register':(context) => const RegisterForm()
+      '/register':(context) => const RegisterForm(),
+      '/UserTypeSelectionScreen':(context) =>  UserTypeSelectionScreen()
     },
   );
 }

@@ -12,14 +12,14 @@ class Home extends StatelessWidget {
           left: 40,
           right: 40,
         ),
-        color: Colors.white,
+        color: Color(0xFFF2E0DA),
         child: ListView(
           children:  <Widget>[
             SizedBox(
               width: 130,
               height: 190,
-              child: Image.asset('assets/images/house3.jpg',
-              fit: BoxFit.cover,
+              child: Image.asset('assets/images/housew2.jpg',
+              fit: BoxFit.fitHeight,
               ),
             ),
             const SizedBox(
@@ -32,16 +32,22 @@ class Home extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    'Faxinei',
+                    'Faxi.Nei',
                     style: TextStyle(
                       fontSize: 45,
-                      fontWeight: FontWeight.bold
+                      fontWeight: FontWeight.bold,
+                      color:Colors.blueGrey
                     ),
                   ),
                   SizedBox(
                     height: 5,
                   ),
-                  Text("#Nei A faxina que você pediu")
+                  Text("#Nei A faxina que você pediu",
+                    style: TextStyle(
+                      color: Colors.brown,
+                      fontSize: 16
+                    ),
+                  )
                 ],
               ),
             ),
@@ -54,12 +60,12 @@ class Home extends StatelessWidget {
                       end: Alignment.bottomRight,
                       stops: [0.3,1],
                       colors: [
-                        Color(0xFFE65F95),
-                          Color(0xFFF92b7f),
+                        Color(0xFFD2691E),
+                          Color(0xFFD2691E),
                       ]
                     ),
                     borderRadius: BorderRadius.all(
-                      Radius.circular(5),
+                      Radius.circular(20),
                     )
                   ),
                   child: SizedBox.expand(

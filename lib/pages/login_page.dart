@@ -23,7 +23,7 @@ class LoginPage extends StatelessWidget {
               (
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text('Faxinei', 
+                  Text('Login', 
                   style: TextStyle(
                     fontSize: 40, fontWeight: FontWeight.bold),
                     ),
@@ -88,8 +88,8 @@ class LoginPage extends StatelessWidget {
                       end: Alignment.bottomRight,
                       stops: [0.3,1],
                       colors: [
-                        Color(0xFFE65F95),
-                          Color(0xFFF92b7f),
+                        Color(0xFFD2691E),
+                          Color(0xFFD2691E),
                       ]
                     ),
                     borderRadius: BorderRadius.all(
@@ -119,12 +119,12 @@ class LoginPage extends StatelessWidget {
                       child: (
                       const  Text('cadastre-se',
                       style: TextStyle(
-                        color: Color(0xFFE91E63),
+                        color: Color(0xFFD2691E),
                         fontSize: 20
                       ),)
                       ),
                       onPressed: () {
-                        Navigator.pushNamed(context, '/register');
+                        Navigator.pushNamed(context, '/UserTypeSelectionScreen');
                        },
                     )
                   ),
