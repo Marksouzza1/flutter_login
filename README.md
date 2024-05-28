@@ -1,6 +1,6 @@
 # flutter_login
 
-Interfacr de login simples com flutter
+Interface de login simples com flutter
 
 ## Getting Started
 
